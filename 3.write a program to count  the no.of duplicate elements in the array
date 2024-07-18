@@ -1,0 +1,17 @@
+#include<stdio.h>
+int main()
+{
+    int arr[]={1,2,2,3,3},i,j;
+    int count=0;
+    int length=sizeof(arr)/sizeof(arr[0]);
+    for(i=0;i<length;i++)
+    {
+        for(j=i+1;j<length;j++)
+        {
+            if(arr[i]==arr[j])
+            count++;
+        }
+    }
+    printf("\n duplicate elements of a given array are %d",count);
+    return 0;
+}
